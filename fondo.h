@@ -53,8 +53,7 @@ public:
   }
   Fondo(string shader_filename){
     load_file();
-    cout << vertices.size() << endl;
-    cout << indices.size() << endl;
+
 
 
 
