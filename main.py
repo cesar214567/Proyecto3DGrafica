@@ -67,9 +67,7 @@ def generate_edges(all_images_points):
         process_squares(all_images_points,edges,counter_indexes1+1,counter_indexes2+1,i)
         counter_indexes1 = counter_indexes2
         counter_indexes2 += len(all_images_points[i+1])*2
-        print("####")
-        print(counter_indexes2)
-        print("####")
+
     return edges
 
 
@@ -85,13 +83,6 @@ for index,image_path in enumerate(all_images_list):
     image.show()
     all_images_points.append(all_points)
 
-'''
-local = all_images_points
-while isinstance(local,list):
-    print(len(local))
-    local = local[0]
-    print(type(local))
-'''
 
 edges = generate_edges(all_images_points)
 print(all_images_points)
